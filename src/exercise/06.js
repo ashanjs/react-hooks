@@ -7,8 +7,9 @@ import React from 'react'
 // PokemonInfoFallback: the thing we show while we're loading the pokemon info
 // PokemonDataView: the stuff we use to display the pokemon info
 import { PokemonForm, fetchPokemon, PokemonInfoFallback, PokemonDataView, } from '../pokemon'
+import { ErrorBoundary } from 'react-error-boundary'
 
-class ErrorBoundary extends React.Component {
+/*class ErrorBoundary extends React.Component {
   state = { error: null }
   static getDerivedStateFromError(error) {
     return { error }
@@ -20,7 +21,7 @@ class ErrorBoundary extends React.Component {
     }
     return this.props.children
   }
-}
+}*/
 
 function PokemonInfo({ pokemonName }) {
 
